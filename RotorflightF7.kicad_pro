@@ -34,9 +34,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.762,
-          "height": 1.524,
-          "width": 1.524
+          "drill": 0.0,
+          "height": 4.3,
+          "width": 3.4
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -45,7 +45,7 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "min_clearance": 0.19999999999999998
         }
       },
       "diff_pair_dimensions": [
@@ -178,6 +178,7 @@
         0.3,
         0.4,
         0.5,
+        0.6,
         0.8
       ],
       "via_dimensions": [
@@ -441,17 +442,50 @@
     "meta": {
       "version": 3
     },
-    "net_colors": null,
-    "netclass_assignments": null,
+    "net_colors": {
+      "+5V": "rgb(255, 0, 244)",
+      "/ESC": "rgb(0, 255, 0)",
+      "/RPM": "rgb(0, 255, 0)",
+      "/S1": "rgb(0, 255, 0)",
+      "/S2": "rgb(0, 255, 0)",
+      "/S3": "rgb(0, 255, 0)",
+      "/SBUS": "rgb(0, 255, 0)",
+      "/TAIL": "rgb(0, 255, 0)",
+      "GND": "rgb(52, 89, 90)",
+      "VBUS": "rgb(0, 255, 251)"
+    },
+    "netclass_assignments": {
+      "/BARO_SCL": "Baro",
+      "/BARO_SDA": "Baro",
+      "/BMI_MISO": "BMI",
+      "/BMI_MOSI": "BMI",
+      "/BMI_NSS": "BMI",
+      "/BMI_SCK": "BMI",
+      "/ESC": "Servo",
+      "/FLASH_MISO": "Flash",
+      "/FLASH_MOSI": "Flash",
+      "/FLASH_NSS": "Flash",
+      "/FLASH_SCK": "Flash",
+      "/MCU_D+": "USB",
+      "/MCU_D-": "USB",
+      "/RPM": "Servo",
+      "/S1": "Servo",
+      "/S2": "Servo",
+      "/S3": "Servo",
+      "/SBUS": "Servo",
+      "/TAIL": "Servo",
+      "/USB_D+": "USB",
+      "/USB_D-": "USB"
+    },
     "netclass_patterns": []
   },
   "pcbnew": {
     "last_paths": {
       "gencad": "",
       "idf": "",
-      "netlist": "",
+      "netlist": "RotorflightF7.net",
       "specctra_dsn": "",
-      "step": "",
+      "step": "RotorflightF7.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
@@ -479,7 +513,7 @@
     "meta": {
       "version": 1
     },
-    "net_format_name": "",
+    "net_format_name": "KiCad",
     "page_layout_descr_file": "",
     "plot_directory": "",
     "spice_current_sheet_as_root": false,
